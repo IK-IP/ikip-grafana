@@ -1,0 +1,4 @@
+grafana.ini:
+  server:
+    domain: ikip.cloud
+    root_url: '%(protocol)s://%(domain)s/grafana'
