@@ -798,6 +798,9 @@ grafana.ini:
     mode: console
   grafana_net:
     url: https://grafana.net
+  security:
+    allow_embedding: true
+    content_type_protection: false
   server:
     domain: ikip.cloud
     ##domain: "{{ if (and .Values.ingress.enabled .Values.ingress.hosts) }}{{ .Values.ingress.hosts | first }}{{ else }}''{{ end }}"
