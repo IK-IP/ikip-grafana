@@ -604,6 +604,7 @@ lifecycleHooks: {}
 ##
 plugins: 
   - simpod-json-datasource
+  - yesoreyeram-infinity-datasource
   # - digrich-bubblechart-panel
   # - grafana-clock-panel
   ## You can also use other plugin download URL, as long as they are valid zip files,
