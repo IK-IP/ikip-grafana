@@ -2,3 +2,19 @@ grafana.ini:
   server:
     domain: ikip.cloud
     root_url: '%(protocol)s://%(domain)s/grafana'
+
+# Persistence configuration
+persistence:
+  enabled: true
+  existingClaim: "grafana-cephfs-pvc"
+
+
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+      - name: Prometheus
+        type: prometheus
+        url: http://prometheus-server:80
+        access: proxy
+        isDefault: true
