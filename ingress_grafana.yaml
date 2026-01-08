@@ -17,6 +17,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: grafana
+            name: ikip-grafana
             port:
               number: 80
